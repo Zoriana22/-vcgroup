@@ -3,196 +3,303 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png"/>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
     <link rel="manifest" href="favicons/site.webmanifest" />
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5"/>
+    <link
+      rel="mask-icon"
+      href="favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <title>Consulting Services</title>
     <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script defer src="Inputmask-5.x/Inputmask-5.x/dist/inputmask.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script defer src="./Inputmask-5.x/inputmask.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('eAD8gHX-oP0Fm_78D');
-        })();
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("api");
+      })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_bseddub', 'template_4hog4v6', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // these IDs from the previous steps
+            emailjs.sendForm("service", "template", this).then(
+              function () {},
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
     </script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    
-      <header class="header">
-        <div class="header__logo">
-          <img class="logo-pic" src="img/Изображение WhatsApp 2023-10-23 в 11.51.36_8769ed01.jpg" alt="logo">
-          <div class="logo-text">
-            <span class="logo-text-word">CONSULTING</span>
-            <span class="logo-text-word">SERVICES</span>
-            <span class="logo-text-word">FOR YOUR FINANCIAL SUCCESS</span>
-          </div>
+    <header class="header">
+      <div class="header__logo">
+        <img
+          class="logo-pic"
+          src="img/Изображение WhatsApp 2023-10-23 в 11.51.36_8769ed01.jpg"
+          alt="logo"
+        />
+        <div class="logo-text">
+          <span class="logo-text-word">CONSULTING</span>
+          <span class="logo-text-word">SERVICES</span>
+          <span class="logo-text-word">FOR YOUR FINANCIAL SUCCESS</span>
         </div>
-        <a href="#" class="more-info">
-          <span>ПОДРОБНЕЕ...</span>
-        </a>
-        <div class="burger__false">
-          <div class="false-line"></div>
-          <div class="false-line"></div>
-          <div class="false-line"></div>
-        </div>
+      </div>
+      <a href="#" class="more-info">
+        <span>ПОДРОБНЕЕ...</span>
+      </a>
+      <div class="burger__false">
+        <div class="false-line"></div>
+        <div class="false-line"></div>
+        <div class="false-line"></div>
+      </div>
+    </header>
 
-      </header>
-      
-      <main class="container">
-        <div class="border-gradient"></div> 
-        
-        <div class="hero__cont">
-          <div class="hero__pic"></div>
-          <div class="main__descr">
-            <article class="text-top">Увеличим стоимость вашего капитала <br> в 2-5 раз с помощью авторской технологии <br> «Три Вершины»</article>
-            <article class="text-bottom">Как работает наша технология? <br> Она включает в себя три&nbsp;точки/&nbsp;вершины/&nbsp;действия, которые приводят инвестора к результатам:</article>
-          </div>
-        </div>
+    <main class="container">
+      <div class="border-gradient"></div>
 
-        <article class="article-inf">
-          <h3 class="article-item-title">"ЭВЕРЕСТ"</h3>
-          <div class="art-text-box">
+      <div class="hero__cont">
+        <div class="hero__pic"></div>
+        <div class="main__descr">
+          <article class="text-top">
+            Увеличим стоимость вашего капитала <br />
+            в 2-5 раз с помощью авторской технологии <br />
+            «Три Вершины»
+          </article>
+          <article class="text-bottom">
+            Как работает наша технология? <br />
+            Она включает в себя три&nbsp;точки/&nbsp;вершины/&nbsp;действия,
+            которые приводят инвестора к результатам:
+          </article>
+        </div>
+      </div>
+
+      <article class="article-inf">
+        <h3 class="article-item-title">"ЭВЕРЕСТ"</h3>
+        <div class="art-text-box">
           <p class="article-item-descr">
-            Фундаментальный анализ бизнеса - мы тщательно анализируем бизнес компаний в которые инвестируем сами и рекомендуем это делать нашим клиентам. Мы анализируем финансовые и операционные показатели компаний и изучаем сигналы, которые дают топ-менеджеры в публичном пространстве. Всё вышеперечисленное напрямую влияет на стоимость активов на фондовом рынке. Поэтому мы всегда монитором ситуацию и делаем выводы.
-          </p>
-          </div>
-          <h3 class="article-item-title">"ЭЛЬБРУС"</h3>
-          <div class="art-text-box">
-          <p class="article-item-descr">Отслеживание трендов в социальных сетях - не менее важный аспект в сегодняшних условиях на фондовом рынке. Во все времена было важно умение правильно преподносить информацию о деятельности компаний. А с ростом популярности соцсетей, формирование правильного образа компании/бренда стало еще более важно! Для этого существуют специальные отделы по связям с инвесторами.
-            Сегодня на рынке московской биржи 80% объема принадлежит физическим лицам, нам с Вами. Если институциональные инвесторы не склонны к импульсивности, то физическим лицам не чужды эмоции и склонность к резким поступкам. Частные инвесторы, в основном потребляют информацию с помощью телеграмм каналов, а мы, со своей стороны следим за трендами. Ведь нет ничего лучше, чем на волне всеобщей паники приобрести отличные активы по хорошей цене.
-          </p>
-          </div>
-          <h3 class="article-item-title">"КИЛИМАНДЖАРО"</h3>
-          <div class="art-text-box">
-          <p class="article-item-descr">
-            Психология - главный враг инвестора, это он сам. Как говорил Марк Твен: "За свою долгую жизнь я пережил огромное количество неприятностей, большинство из которых со мной так и не произошло". Рынок, в лице людей которые на нем действуют, склонен переоценивать значимость новостей которые регулярно выходят в информационном пространстве. Абсолютное большинство подобных ситуаций не несет какого-либо катастрофического влияния на бизнес компаний, но громкие заголовки СМИ преподносят это, как апокалипсис.
-Тут и выходит на первый план ментальный настрой человека и способность мыслить критически, чтобы не "стрелять себе в ногу". А даже наоборот, использовать подобные ситуации, себе на пользу.
+            Фундаментальный анализ бизнеса - мы тщательно анализируем бизнес
+            компаний в которые инвестируем сами и рекомендуем это делать нашим
+            клиентам. Мы анализируем финансовые и операционные показатели
+            компаний и изучаем сигналы, которые дают топ-менеджеры в публичном
+            пространстве. Всё вышеперечисленное напрямую влияет на стоимость
+            активов на фондовом рынке. Поэтому мы всегда монитором ситуацию и
+            делаем выводы.
           </p>
         </div>
-        </article>
+        <h3 class="article-item-title">"ЭЛЬБРУС"</h3>
+        <div class="art-text-box">
+          <p class="article-item-descr">
+            Отслеживание трендов в социальных сетях - не менее важный аспект в
+            сегодняшних условиях на фондовом рынке. Во все времена было важно
+            умение правильно преподносить информацию о деятельности компаний. А
+            с ростом популярности соцсетей, формирование правильного образа
+            компании/бренда стало еще более важно! Для этого существуют
+            специальные отделы по связям с инвесторами. Сегодня на рынке
+            московской биржи 80% объема принадлежит физическим лицам, нам с
+            Вами. Если институциональные инвесторы не склонны к импульсивности,
+            то физическим лицам не чужды эмоции и склонность к резким поступкам.
+            Частные инвесторы, в основном потребляют информацию с помощью
+            телеграмм каналов, а мы, со своей стороны следим за трендами. Ведь
+            нет ничего лучше, чем на волне всеобщей паники приобрести отличные
+            активы по хорошей цене.
+          </p>
+        </div>
+        <h3 class="article-item-title">"КИЛИМАНДЖАРО"</h3>
+        <div class="art-text-box">
+          <p class="article-item-descr">
+            Психология - главный враг инвестора, это он сам. Как говорил Марк
+            Твен: "За свою долгую жизнь я пережил огромное количество
+            неприятностей, большинство из которых со мной так и не произошло".
+            Рынок, в лице людей которые на нем действуют, склонен переоценивать
+            значимость новостей которые регулярно выходят в информационном
+            пространстве. Абсолютное большинство подобных ситуаций не несет
+            какого-либо катастрофического влияния на бизнес компаний, но громкие
+            заголовки СМИ преподносят это, как апокалипсис. Тут и выходит на
+            первый план ментальный настрой человека и способность мыслить
+            критически, чтобы не "стрелять себе в ногу". А даже наоборот,
+            использовать подобные ситуации, себе на пользу.
+          </p>
+        </div>
+      </article>
 
-        <div class="border-gradient-rev"></div>
-        
-        <div class="prices">
-          <div class="burger__false-price">
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-          </div>
-          <p class="price-item">БЕСПЛАТНАЯ ДИАГНОСТИКА ПРОФИЛЯ</p>
-          <div class="burger__false-price">
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-          </div>
-        </div>   
-        
-        <div class="prices">
-          <div class="burger__false-price">
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-          </div>
-          <p class="price-item">Финансовая консультация 5000₽/30мин</p>
-          <div class="burger__false-price">
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-          </div>
-        </div>  
+      <div class="border-gradient-rev"></div>
 
-        <div class="prices">
-          <div class="burger__false-price">
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-          </div>
-          <p class="price-item">Составление индивидуальной инвестиционной рекомендации 30000₽</p>
-          <div class="burger__false-price">
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-            <div class="false-line"></div>
-          </div>
-        </div>  
+      <div class="prices">
+        <div class="burger__false-price">
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+        </div>
+        <p class="price-item">БЕСПЛАТНАЯ ДИАГНОСТИКА ПРОФИЛЯ</p>
+        <div class="burger__false-price">
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+        </div>
+      </div>
 
+      <div class="prices">
+        <div class="burger__false-price">
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+        </div>
+        <p class="price-item">Финансовая консультация 5000₽/30мин</p>
+        <div class="burger__false-price">
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+        </div>
+      </div>
 
+      <div class="prices">
+        <div class="burger__false-price">
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+        </div>
+        <p class="price-item">
+          Составление индивидуальной инвестиционной рекомендации 30000₽
+        </p>
+        <div class="burger__false-price">
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+          <div class="false-line"></div>
+        </div>
+      </div>
 
-        <footer>
-          <div class="footer__box"> 
-            <div class="footer-left">
+      <footer>
+        <div class="footer__box">
+          <div class="footer-left">
             <h2 class="footer-left-title">V.I.C.</h2>
 
             <div class="sert__cont">
-            <p class="sertificates">Наши сертификаты</p>
-            <a href="#" aria-label="сертификаты" class="sert-link">
-              <img src="img/sert-pic.jpg" alt="сертификаты">
-            </a>
+              <p class="sertificates">Наши сертификаты</p>
+              <a href="#" aria-label="сертификаты" class="sert-link">
+                <img src="img/sert-pic.jpg" alt="сертификаты" />
+              </a>
             </div>
-                        
+
             <div class="networks-icons">
               <p class="social-networks">Социальные сети</p>
-              <a href="https://youtube.com/@voloshkov_invest" aria-label="Ютуб" class="youtube-link">
-               <img src="img/yuotube-pic.jpg" alt="Ютуб">
+              <a
+                href="https://youtube.com/@voloshkov_invest"
+                aria-label="Ютуб"
+                class="youtube-link"
+              >
+                <img src="img/yuotube-pic.jpg" alt="Ютуб" />
               </a>
-              <a href="https://t.me/voloshkov_invest" aria-label="Телеграм" class="telegram-link">
-               <img src="img/telega-pic.jpg" alt="Телеграм">
+              <a
+                href="https://t.me/voloshkov_invest"
+                aria-label="Телеграм"
+                class="telegram-link"
+              >
+                <img src="img/telega-pic.jpg" alt="Телеграм" />
               </a>
             </div>
 
             <div class="taxes__info">ИП Волошков Ярослав Юрьевич <br>ОГРНИП 323508100543378 <br>ИНН 614707378291</div>
 
             </div>
+          </div>
 
-            <div class="footer-right">
-            <h2 class="section-title footer__title">Возникли трудности?<br>Заполните форму и с вами свяжутся для оказания помощи</h2>
+          <div class="footer-right">
+            <h2 class="section-title footer__title">
+              Возникли трудности?<br />Заполните форму и с вами свяжутся для
+              оказания помощи
+            </h2>
             <form id="contact-form" method="post" class="form-request flex">
-            <label class="persons-data">
-             <!--<span class="visually-hidden">Фамилия, имя и отчество</span>-->
-            <input class="persons__name" type="text" name="user_name" data-validate-field="name" data-validate-rules="name" placeholder="Ваше имя*" required>
-             <!--<span class="visually-hidden">Введите электронную почту</span>-->
-            <input class="persons__email" type="email" name="user_email" data-validate-field="email" placeholder="Ваша почта*" required>
-              <!--<span class="visually-hidden">Введите номер телефона</span>-->
-            <input class="persons__email" type="tel" name="contact_number" data-validate-field="tel" data-validate-rules="phone" placeholder="Ваш телефон*" required>
-            
-            </label>
-            <div class="footer-right__request">
-            <button type="submit" value="Send" aria-label="кнопка отправить данные" class="request__btn btn"><span class="request-btn__text">Связаться с нами</span></button>
-            <label class="checkbox-place">
-              <span class="checkbox__text">Мы получаем и обрабатываем персональные данные посетителей нашего сайта в соответствии с официальной политикой</span>
-            </label>
-            </div>
-           </form>
-            </div>
-          </div> 
-        </footer>
-      </main>
-      
-    
+              <label class="persons-data">
+                <!--<span class="visually-hidden">Фамилия, имя и отчество</span>-->
+                <input
+                  class="persons__name"
+                  type="text"
+                  name="user_name"
+                  data-validate-field="name"
+                  data-validate-rules="name"
+                  placeholder="Ваше имя*"
+                  required
+                />
+                <!--<span class="visually-hidden">Введите электронную почту</span>-->
+                <input
+                  class="persons__email"
+                  type="email"
+                  name="user_email"
+                  data-validate-field="email"
+                  placeholder="Ваша почта*"
+                  required
+                />
+                <!--<span class="visually-hidden">Введите номер телефона</span>-->
+                <input
+                  class="persons__tel"
+                  type="tel"
+                  name="contact_number"
+                  data-validate-field="tel"
+                  data-validate-rules="phone"
+                  placeholder="Ваш телефон*"
+                  required
+                />
+              </label>
+              <div class="footer-right__request">
+                <button
+                  type="submit"
+                  value="Send"
+                  aria-label="кнопка отправить данные"
+                  class="request__btn btn"
+                >
+                  <span class="request-btn__text">Связаться с нами</span>
+                </button>
+                <label class="checkbox-place">
+                  <span class="checkbox__text"
+                    >Мы получаем и обрабатываем персональные данные посетителей
+                    нашего сайта в соответствии с официальной политикой</span
+                  >
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
@@ -200,47 +307,44 @@
     <script src="Inputmask-5.x/Inputmask-5.x/dist/inputmask.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script>
-        var selector = document.querySelector("input[type='tel']");
-        var im = new Inputmask("+7 (999) -999-99-99");
+      var selector = document.querySelector("input[type='tel']");
+      var im = new Inputmask("+7 (999) -999-99-99");
 
-        im.mask(selector);
-      
-        new JustValidate('.form', {
-            rules: {
-                name: {
-                    required: true,
-                    minLength: 2,
-                    maxLength: 10
-                },
-                tel: {
-                    required: true,
-                    function: (name, value) => {
-                        const  phone = selector.Inputmask.unmaskedvalue ()
-                        return Number (phone) && phone.length === 10 
-                    },
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
+      im.mask(selector);
+
+      new JustValidate(".form", {
+        rules: {
+          name: {
+            required: true,
+            minLength: 2,
+            maxLength: 10,
+          },
+          tel: {
+            required: true,
+            function: (name, value) => {
+              const phone = selector.Inputmask.unmaskedvalue();
+              return Number(phone) && phone.length === 10;
             },
+          },
+          email: {
+            required: true,
+            email: true,
+          },
+        },
 
-            messages: {
-                email: {
-                    required: 'Вы не ввели e-mail',
-                },
-                tel: {
-                    required: 'Вы не ввели телефон',
-                },
-                name: {
-                    required: 'Вы не ввели имя?'
-                }
-                
-            },
-            colorWrong: '#FF5C00',
-        });
-
-        
+        messages: {
+          email: {
+            required: "Вы не ввели e-mail",
+          },
+          tel: {
+            required: "Вы не ввели телефон",
+          },
+          name: {
+            required: "Вы не ввели имя?",
+          },
+        },
+        colorWrong: "#FF5C00",
+      });
     </script>
   </body>
 </html>
