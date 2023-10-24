@@ -97,8 +97,8 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
- 
- .section-title {
+
+.section-title {
   position: relative;
   display: inline-block;
   width: 570px;
@@ -107,8 +107,8 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: white
- }
+  color: white;
+}
 
 /*header*/
 .header {
@@ -144,9 +144,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 22px;
-  color: #FFF;
+  color: #fff;
   border: 2px solid transparent;
-  border-left: 2px solid #FFF;
+  border-left: 2px solid #fff;
 }
 .logo-text-word:last-child {
   font-size: 15px;
@@ -160,7 +160,7 @@ body {
   margin-right: 160px;
   font-weight: 700;
   font-size: 22px;
-  color: #FFF;
+  color: #fff;
   background-color: #282727;
   text-align: center;
   padding-top: 15px;
@@ -183,7 +183,7 @@ body {
 .border-gradient {
   width: 100%;
   height: 50px;
-  background: linear-gradient(to right,  #282727, gold);
+  background: linear-gradient(to right, #282727, gold);
   margin-bottom: 70px;
 }
 .hero__cont {
@@ -209,7 +209,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 49px;
-  color: #FFF;
+  color: #fff;
 }
 .text-bottom {
   max-width: 1170px;
@@ -219,24 +219,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 50px;
-  color: #FFF;
+  color: #fff;
 }
 .article-inf {
   width: 1550px;
   display: flex;
   flex-direction: column;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 70px;
 }
 .article-item-title {
   margin: 30px 0px 5px 100px;
-
 }
-.art-text-box{
+.art-text-box {
   width: 1550px;
   min-height: 85px;
   border-bottom: 2px solid transparent;
-  border-image: linear-gradient(to right, #FFF, gold) 1;
+  border-image: linear-gradient(to right, #fff, gold) 1;
 }
 .border-gradient-rev {
   width: 100%;
@@ -262,7 +261,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 30px;
-  color: #FFF;
+  color: #fff;
 }
 
 /*footer*/
@@ -279,7 +278,7 @@ body {
   height: 590px;
   padding-top: 30px;
 }
-.footer-left-title{
+.footer-left-title {
   width: 200px;
   margin: 0;
   margin-left: 70px;
@@ -289,7 +288,8 @@ body {
   font-size: 60px;
   color: gold;
 }
-.sert__cont, .networks-icons {
+.sert__cont,
+.networks-icons {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -306,7 +306,9 @@ body {
   font-size: 40px;
   color: white;
 }
-.sert-link, .youtube-link, .telegram-link {
+.sert-link,
+.youtube-link,
+.telegram-link {
   margin: 0;
   margin-left: 15px;
 }
@@ -331,19 +333,20 @@ body {
 .footer__title {
   margin-bottom: 25px;
 }
- 
+
 .form-request {
   display: flex;
   flex-direction: column;
 }
- 
+
 .persons-data {
   display: flex;
   flex-direction: column;
 }
- 
+
 .persons__name,
-.persons__email {
+.persons__email,
+.persons__tel {
   width: 570px;
   min-height: 60px;
   border-radius: 16px;
@@ -352,7 +355,7 @@ body {
   margin-bottom: 25px;
   transition: background-color 0.3s ease-in-out;
 }
- 
+
 .persons__comments {
   width: 570px;
   min-height: 90px;
@@ -362,53 +365,57 @@ body {
   margin-bottom: 32px;
   transition: background-color 0.3s ease-in-out;
 }
- 
+
 .persons__name:focus,
 .persons__email:focus,
-.persons__comments:focus {
+.persons__comments:focus,
+.persons__tel:focus {
   background-color: var(--grey);
   outline: none;
 }
- 
- .persons__name:hover,
- .persons__email:hover,
- .persons__comments:hover {
+
+.persons__name:hover,
+.persons__email:hover,
+.persons__comments:hover,
+.persons__tel:hover {
   background-color: var(--grey);
   outline: none;
- }
- 
- .persons__name:active,
- .persons__email:active,
- .persons__comments:active {
+}
+
+.persons__name:active,
+.persons__email:active,
+.persons__comments:active,
+.persons__tel:active {
   background-color: var(--grey-light);
   outline: none;
- }
- 
- .persons__name::placeholder,
- .persons__email::placeholder {
+}
+
+.persons__name::placeholder,
+.persons__email::placeholder,
+.persons__tel::placeholder {
   font-weight: 600;
   font-size: 17px;
   font-style: italic;
   line-height: 32px;
   color: var(--grey-light);
- }
- 
- .persons__comments::placeholder {
+}
+
+.persons__comments::placeholder {
   font-weight: 600;
   font-size: 20px;
   font-style: italic;
   line-height: 32px;
   color: var(--grey-light);
- }
- 
- .footer-right__request {
+}
+
+.footer-right__request {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   width: 570px;
- }
- 
- .request__btn {
+}
+
+.request__btn {
   width: 200px;
   margin: 0;
   margin-right: 22px;
@@ -417,29 +424,29 @@ body {
   border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
- }
- 
- .request__btn:focus{
+}
+
+.request__btn:focus {
   background-color: var(--beige-second);
- }
- 
- .request__btn:hover {
+}
+
+.request__btn:hover {
   background-color: var(--beige-second);
- }
- 
- .request__btn:active{
+}
+
+.request__btn:active {
   background-color: var(--beige-third);
- }
-  
- .request-btn__text {
+}
+
+.request-btn__text {
   white-space: nowrap;
   font-weight: 600;
   font-size: 17px;
   line-height: 20px;
-  color: #FFF
- }
- 
- .checkbox__input{
+  color: #fff;
+}
+
+.checkbox__input {
   position: relative;
   margin: 0;
   margin-right: 2px;
@@ -447,9 +454,9 @@ body {
   height: 14px;
   border-color: var(--white-color);
   background-color: var(--black);
- }
- 
- .checkbox__input::after {
+}
+
+.checkbox__input::after {
   content: "";
   position: absolute;
   left: 0;
@@ -459,30 +466,29 @@ body {
   background-color: var(--black);
   background-image: url(./img/footer-check.svg);
   opacity: 0;
- }
- 
- .checkbox__input:checked::after {
+}
+
+.checkbox__input:checked::after {
   opacity: 1;
- }
- 
- .checkbox-place {
+}
+
+.checkbox-place {
   width: 353px;
   min-height: 32px;
- }
- 
- .checkbox__text {
+}
+
+.checkbox__text {
   margin: 0;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
   color: var(--grey-light);
- }
-  
- .footer__descr {
+}
+
+.footer__descr {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: var(--grey-light);
- }
- 
+}
